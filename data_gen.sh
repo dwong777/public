@@ -5,9 +5,9 @@
 
 # Run with 1 thread and multiple iterations values
 test1() {
-	local num_runs=2
+	local num_runs=10
 
-	local options=("Synchronized" "Unsynchronized" "GetNSet" "BetterSafe" "BetterSafeAlt")
+	local options=("Synchronized" "Unsynchronized" "GetNSet" "BetterSafe" "BetterSafeAlt" "Null")
 	local threads=1
 	local iterations=(100 10000 1000000 100000000)
 	local max_val=6
@@ -31,9 +31,9 @@ test1() {
 
 # Test different thread values
 test2() {
-	local num_runs=2
+	local num_runs=10
 
-	local options=("Synchronized" "BetterSafe" "BetterSafeAlt")
+	local options=("Synchronized" "BetterSafe" "BetterSafeAlt" "Null")
 	local threads=(1 2 4 8 12 16) 
 	local iterations=1000000
 	local max_val=6
@@ -57,9 +57,9 @@ test2() {
 
 # Test different array sizes
 test3() {
-	local num_runs=2
+	local num_runs=10
 
-	local options=("Synchronized" "BetterSafe" "BetterSafeAlt")
+	local options=("Synchronized" "BetterSafe" "BetterSafeAlt" "Null")
 	local threads=6
 	local iterations=1000000
 	local max_val=6
