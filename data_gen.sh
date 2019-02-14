@@ -34,7 +34,7 @@ test2() {
 	local num_runs=10
 
 	local options=("Synchronized" "BetterSafe" "BetterSafeAlt" "Null")
-	local threads=(1 2 4 8 12 16) 
+	local threads=(1 2 4 8 12 16 32) 
 	local iterations=1000000
 	local max_val=6
 	local test_arr=(5 6 3 0 3)
